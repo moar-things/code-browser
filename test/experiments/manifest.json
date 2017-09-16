@@ -1,0 +1,14 @@
+{
+  "name": "code-browser experiments open-no-chrome-windows (from manifest)",
+  "icons": [
+    {
+      "src": "../../docs/images/code-browser.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FAA",
+  "background_color": "#AFA",
+  "start_url": "test/experiments/open-no-chrome-windows.html",
+  "display": "standalone"
+}

@@ -1,0 +1,13 @@
+{
+  "ext": "js,json,less",
+  "ignore": [
+    "tmp/",
+    "docs/app.css",
+    "docs/app.css.map.json",
+    "docs/app.js",
+    "docs/app.js.map.json",
+    "docs/tests.js",
+    "docs/tests.js.map.json",
+    "docs/jquery-*.js"
+  ]
+}

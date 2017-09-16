@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../docs/images/code-browser.png" />
+    <title>code-browser experiments open-no-chrome-windows</title>
+  </head>
+  <body style="background-color:#FAA;">
+    <button style="font-size: 200%;" onclick="openWindow();">open</button>
+
+    <script>
+/*
+javascript:window.open('file:///Users/pmuellr/Projects/moar-things/code-browser/test/experiments/open-no-chrome-windows.html', 'new', 'code-browser')
+*/
+    document.title = `opened on ${new Date()}`
+
+    function openWindow () {
+      const name = `window-${Date.now()}`
+
+      // the feature string: apparently, if set to any value, will open
+      // a new window (instead of tab) with minimal chromeage
+      const result = window.open(window.location.href, name, 'code-browser')
+      console.log(`window.open("${window.location.href}", "${name}"):`, result)
+      console.log(`features:`, features)
+      console.log(`features:`, featuresString)
+
+      function toFeatureString (key) { return `${key}=${features[key]}` }
+
+      function getWindowRect () {
+        const screen = window.screen
+        const winHeight = window.innerHeight
+        const winWidth = window.innerWidth
+
+        const winMinX = screen.availLeft
+        const winMaxX = screen.availLeft + screen.availWidth - winWidth
+        const winMinY = screen.availTop
+        const winMaxY = screen.availTop + screen.availHeight - winHeight
+
+        const winX = winMinX + (Math.random() * (winMaxX - winMinX))
+        const winY = winMinY + (Math.random() * (winMaxY - winMinY))
+
+        return {
+          width: winWidth,
+          height: winHeight,
+          left: winX,
+          top: winY
+        }
+      }
+    }
+    </script>
+  </body>
+</html>

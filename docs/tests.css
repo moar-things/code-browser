@@ -1,0 +1,28 @@
+#errors, .test {
+  border: thin solid black;
+  border-radius: 1em;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.asserts {
+  padding-bottom: 1em;
+}
+
+h1 {
+  padding-left: 0.5em;
+  border-radius: 0.25em;
+}
+
+#errors h1 {
+  color:white;
+  background-color:red;
+}
+
+#errors {
+  display: none;
+}
+
+#errors.failures {
+  display: block;
+}

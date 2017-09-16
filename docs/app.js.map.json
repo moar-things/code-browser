@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "sources": [
+        "node_modules/browser-pack/_prelude.js",
+        "lib/web/main.js",
+        "package.json"
+    ],
+    "names": [],
+    "mappings": "AAAA;ACAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;AChBA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA",
+    "file": "docs/app.js",
+    "sourcesContent": [
+        "(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==\"function\"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error(\"Cannot find module '\"+o+\"'\");throw f.code=\"MODULE_NOT_FOUND\",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require==\"function\"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})",
+        "'use strict'\n\nconst jQuery = window.jQuery\n\nconst thisPackage = require('../../package.json')\n\nwindow.CodeBrowser = {\n  version: thisPackage.version\n}\n\nconsole.log('CodeBrowser:', window.CodeBrowser)\n\njQuery(whenReady)\n\nfunction whenReady () {\n}\n",
+        "module.exports={\n  \"name\": \"code-browser\",\n  \"version\": \"0.0.1\",\n  \"description\": \"browse the code\",\n  \"license\": \"MIT\",\n  \"author\": \"Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)\",\n  \"homepage\": \"https://github.com/moar-things/code-browser\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/moar-things/code-browser.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/moar-things/code-browser/issues\"\n  },\n  \"scripts\": {\n    \"build\": \"make build\",\n    \"test\": \"make test\",\n    \"watch\": \"make watch\"\n  },\n  \"standard\": {\n    \"ignore\": [\n      \"/tmp/\",\n      \"/docs/\"\n    ]\n  },\n  \"dependencies\": {\n    \"highlight.js\": \"~9.12.0\"\n  },\n  \"devDependencies\": {\n    \"browserify\": \"~14.4.0\",\n    \"cat-source-map\": \"~0.1.2\",\n    \"chalk\": \"~2.1.0\",\n    \"jquery\": \"~3.2.1\",\n    \"less\": \"~2.7.2\",\n    \"nodemon\": \"~1.11.1\",\n    \"standard\": \"~10.0.3\",\n    \"tap-spec\": \"~4.1.1\",\n    \"tape\": \"~4.8.0\"\n  }\n}\n"
+    ]
+}

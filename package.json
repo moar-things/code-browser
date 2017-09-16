@@ -1,0 +1,40 @@
+{
+  "name": "code-browser",
+  "version": "0.0.1",
+  "description": "browse the code",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "homepage": "https://github.com/moar-things/code-browser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moar-things/code-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moar-things/code-browser/issues"
+  },
+  "scripts": {
+    "build": "make build",
+    "test": "make test",
+    "watch": "make watch"
+  },
+  "standard": {
+    "ignore": [
+      "/tmp/",
+      "/docs/"
+    ]
+  },
+  "dependencies": {
+    "highlight.js": "~9.12.0"
+  },
+  "devDependencies": {
+    "browserify": "~14.4.0",
+    "cat-source-map": "~0.1.2",
+    "chalk": "~2.1.0",
+    "jquery": "~3.2.1",
+    "less": "~2.7.2",
+    "nodemon": "~1.11.1",
+    "standard": "~10.0.3",
+    "tap-spec": "~4.1.1",
+    "tape": "~4.8.0"
+  }
+}
